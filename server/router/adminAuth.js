@@ -18,7 +18,7 @@ const requireAdminLogin = async(req, res, next) => {
 };
 
 
-router.post("/adminlogin", async (req, res) => {
+router.post("/admin-login", async (req, res) => {
   try {
     const { email, password } = req.body;
     if (!email || !password) {

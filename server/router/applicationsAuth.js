@@ -59,7 +59,7 @@ router.post("/application-form", async (req, res) => {
       !accountNumber,
       !branch,
       !income,
-      //   !incomeProof,
+      !incomeProof,
       !collegeName,
       !uid,
       !collegeEmail,

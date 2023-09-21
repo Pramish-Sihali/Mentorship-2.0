@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const scholarshipModel = new mongoose.Schema({
-  scholarshipName: {
+  Name: {
     type: String,
     required: true,
     unique : [true, "Scholarship Name already exists"],
@@ -29,11 +29,14 @@ const scholarshipModel = new mongoose.Schema({
   description: {
     type: String
   },
-  timestamp: {
-    type: Date,
-    default: Date.now
-  },
-});
+//   timestamp: {
+//     type: Date,
+//     default: Date.now
+//   },
+// });
+
+// SLC ra +2 
+// 
 
 
 const Scholarships = mongoose.model("scholarships", scholarshipModel);

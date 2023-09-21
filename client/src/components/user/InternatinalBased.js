@@ -5,7 +5,7 @@ import axios from "axios";
 import { UserContext } from "../../context/auth";
 
 
-const MeritBased = () => {
+const InternatinalBased = () => {
   const {
     loggedIn,
     setLoggedIn,
@@ -23,7 +23,7 @@ const MeritBased = () => {
     const getScholarships = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:8080/get-scholarships/${"merit-based"}`
+          `http://localhost:8080/get-scholarships/${"international"}`
         );
         setScholarship(data.scholarship);
         
@@ -150,4 +150,4 @@ const MeritBased = () => {
     );
 }
 
-export default MeritBased
+export default InternatinalBased
